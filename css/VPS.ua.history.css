@@ -1,0 +1,245 @@
+.text1
+    {background: linear-gradient(110deg, rgba(255, 0, 0, 0.5)  , rgba(255, 196, 0, 0.5)  ,rgba(0, 255, 0, 0.5)  );
+    margin: 0px 200Px 10Px ;
+    border:solid 3px rgb(0, 0, 0);
+    border-radius: 10px;
+    height: 140px;
+    backdrop-filter: blur(8px);
+    text-align:center;
+    font-size: 100px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    box-shadow: 0 0 10px black;
+    color: black;}
+.index 
+    {text-decoration:none;}
+
+.text2 h2 
+    {text-shadow: 2px 2px 3px rgb(0, 0, 0);}    
+.text2
+    {margin: 50px 50px  ;
+    border-radius: 10px;   
+    font-size: 30px ; 
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;}
+.text2 p 
+    {font-style: italic;}
+.telo 
+    {border:solid 3px rgb(0, 0, 0);
+    border-radius: 10px ;
+    margin-left: 200px ; 
+    margin-right: 200px ;
+    box-shadow: 0 0 10px black;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.5)}
+.svetofor 
+    {margin: 0px 20px 0;
+    border: solid 3px black;
+    width: 220px;
+    height: 235px;
+    border-radius:10px ;
+    float: right;
+    box-shadow:0 0 5px;}
+.history 
+    {font-family: 'Source Sans Pro', sans-serif;}
+.text3
+    {margin: 50px 50px;
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;}
+.data
+    {font-style: italic;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.37), 0 0 10px rgba(0, 0, 0, 0.37) inset;
+    }
+.data::selection {
+    background: rgba(255, 255, 255, 0.411);
+}
+p::selection {
+    background: rgba(255, 255, 255, 0.411);
+}
+.ustext
+    {height: 20px;
+    width: 25%;
+    }
+.svet{
+    float: right;
+    margin: 0 50px 0px 0px;
+}
+.peredmova{
+    margin-top: 80px ;
+}
+.London1868 
+    {border-radius: 7px ;
+    height: 419px;}
+.kartinka1
+    {height:484px;
+    width:279px ;
+    float:left;
+    margin: 7px 20px 0;
+    border: solid 3px #333;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    background: rgba(236, 236, 236, 0.6);} 
+.kartinka1 figcaption 
+    {margin:7px 7px 7px;
+    width: 279px;
+    height: 50px ;
+    text-align: center;
+    font-weight: bold;}
+.line1
+    {margin: 30px 0;
+	padding: 0;
+	height: 20px;
+	border: none;
+	border-top: 3px solid #333;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;} 
+.Earnest 
+    {border-radius: 7px ;
+     height: 340px;
+    }
+.kartinka2
+    {height:420px;
+    width:359px ;
+    float:right;
+    margin: 7px 20px 0;
+    border: solid 3px #333;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    background: rgba(236, 236, 236, 0.6);} 
+.kartinka2 figcaption 
+    {margin: 0 auto 0px;
+    width: 359px ;
+    text-align: center;
+    font-weight: bold;}
+.klivlend
+    {border-radius: 7px ;
+     height: 340px;
+    }
+.kartinka3
+    {height:420px;
+    width:296px ;
+    float:left;
+    margin: 7px 20px 0;
+    border: solid 3px #333;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    background: rgba(236, 236, 236, 0.6);} 
+.kartinka3 figcaption 
+    {margin: 0px 5px 5px 0px;
+    width: 296px ;
+    text-align: center;
+    font-weight: bold;}
+.USSR
+    {border-radius: 7px ;
+     height: 250px;
+    }
+.kartinka4
+    {height:300px;
+    width:393px ;
+    float:right;
+    margin: 7px 20px 0;
+    border: solid 3px #333;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    background: rgba(236, 236, 236, 0.6);} 
+.kartinka4 figcaption 
+    {margin: 0px 5px 5px 0px;
+    width: 393px ;
+    text-align: center;
+    font-weight: bold;}
+p 
+    {text-indent: 20px}
+.history 
+    {text-shadow: 2px 2px 3px rgb(0, 0, 0);;}
+.text31
+    {font: size 30PX; ;}
+.knopki
+    {padding:20px 200px 30px ;
+    }  
+.knopki .neactiv
+    {font-family:'Source Sans Pro', sans-serif ;
+    float: left;
+    background: none;
+    border: solid 3px black;
+    color: rgb(0, 0, 0);
+    height:110px ;
+    text-align: center;
+    text-decoration: none;
+    font-size: 35px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    box-shadow: 0 0 10px black;
+    width:20%;
+    font-weight:bold;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.5);
+    }
+.knopki button:not(:last-child) 
+    {border-right: none; }
+.knopki:after 
+    {content: "";
+    clear: both;
+    display: table;
+    }
+.knopki .neactiv:hover:hover {
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    box-shadow: inset 0px 0px 10px 1px rgb(0, 0, 0);}
+.knopki .btn1 button
+    {border-radius: 10px 0 0 10px;
+    border-right-width:0px;}
+.knopki .btn5 button
+    {border-radius: 0px 10px 10px 0px;}
+.knopki .seredina a button
+    {border-right-width:0px;}
+html 
+    {background-image: url(../Images/york3.jpg);
+    background-attachment: fixed;
+    background-size: 100% 1000px}
+.activ 
+    {font-family:'Source Sans Pro', sans-serif ;
+    float: left;
+    background: none;
+    border: solid 3px black;
+    color: rgb(255, 255, 255);
+    height:110px ;
+    text-align: center;
+    text-decoration: none;
+    font-size: 35px;
+    box-shadow: 0 0 10px black;
+    width:20%;
+    font-weight:bold;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.5);
+}
+Ul 
+    {list-style-type: disc }
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);;
+    z-index: 1001;
+      }      
+.preloader_image {
+    position: relative;
+    top: 37%;
+    left: 45%;
+    width: 255px;
+    height: 255px;
+    margin-top: -10px;
+    margin-left: -32px;
+    background: url(Images/Ikonka_VPS.history.png) no-repeat 50% 50%; 
+      }
+.loaded_hiding .preloader {
+    transition: 0.5s opacity;
+    opacity: 0;
+    }
+.loaded .preloader {
+    display: none;
+    }   

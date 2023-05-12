@@ -1,0 +1,159 @@
+
+.button_row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.button_row_v {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-direction: column;
+    background-color: bisque;
+}
+#Button {
+    border: 2px solid black;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    width: 20%;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 10px black;
+    font-size: 2vw;
+    
+}
+  
+#Button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+}
+.active{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    backdrop-filter: blur(8px);
+}
+.text1_container
+    {background: linear-gradient(110deg, rgba(255, 0, 0, 0.5), rgba(255, 196, 0, 0.5),rgba(0, 255, 0, 0.5));
+    border:solid 3px rgb(0, 0, 0);
+    border-radius: 10px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    box-shadow: 0 0 10px black;
+    color: black;
+    display: flex;
+    backdrop-filter: blur(8px);}
+.title{
+    text-align: center;
+    font-size: 5vw;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+.index 
+    {text-decoration:none;}
+.text2 h2 
+    {text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    text-align: center;}    
+.text2
+    {margin: 50px 50px  ;
+    border-radius: 10px;   
+    font-size: 30px ; 
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;}
+.wrap{
+    margin:0 200px ;
+}    
+.telo 
+    {border:solid 3px rgb(0, 0, 0);
+    filter:alpha(opacity=300px);;
+    border-radius: 10px ;
+    box-shadow: 0 0 10px black;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.5)
+    }
+.knopki a 
+    {text-decoration: none;      
+}
+.knopki a div {
+    border-radius: 10px;
+    text-align: center;
+}
+.knopki .neactiv
+    {font-family:'Source Sans Pro', sans-serif ;
+    border: solid 3px black;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 35px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    box-shadow: 0 0 10px black;
+    font-weight:bold;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.5);
+    }
+.knopki div:not(:last-child) 
+    {border-right: none; }
+.knopki:after 
+    {content: "";
+    clear: both;
+    display: table;
+    }
+.knopki div:hover {
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    box-shadow: inset 0px 0px 10px 1px rgb(0, 0, 0);}
+p
+    {text-indent: 20px}
+html 
+    {background-image: url('../Images/Yyc.jpg');
+    background-attachment: fixed;
+    background-size: 100% 1000px}
+.line1
+    {margin: 30px 0;
+	padding: 0;
+	height: 20px;
+	border: none;
+	border-top: 3px solid #333;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;} 
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);;
+    z-index: 1001;
+      }      
+.preloader_image {
+    position: relative;
+    top: 37%;
+    left: 45%;
+    width: 255px;
+    height: 255px;
+    margin-top: -10px;
+    margin-left: -32px;
+    background: url('../Images/Ikonka_VPS.png') no-repeat 50% 50%; 
+      }
+.loaded_hiding .preloader {
+    transition: 0.5s opacity;
+    opacity: 0;
+    }
+.loaded .preloader {
+    display: none;
+    } 
