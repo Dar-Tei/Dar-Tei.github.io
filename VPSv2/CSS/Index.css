@@ -1,9 +1,15 @@
 /*Styles for header*/
 html {
-  background-image: url("../../Images/Yyc.jpg");
+  background-image: url("../Images/Yyc.jpg");
   background-size: 105%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+@font-face 
+{
+  font-family: 'Montserrat';
+  src: url(../Fonts/Montserrat-VariableFont_wght.ttf);
 }
 
 body {
@@ -54,15 +60,23 @@ body {
 
 /*Text*/
 p,
-h1,
-h2,
-h3,
 button,
-a {
+a, 
+ul {
   text-shadow: 1px 1px 2px rgb(94, 94, 94);
   font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
 }
 
+h1,
+h2,
+h3 {
+  text-shadow: 1px 1px 2px rgb(94, 94, 94);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+}
 .content {
   margin: 0;
 }
@@ -107,6 +121,7 @@ a {
 .logo {
   font-size: calc(17px + 16*(100vw / 1280));
   margin-left: 5px;
+ 
 }
 
 @media screen and (min-width: 600px) {
@@ -119,8 +134,8 @@ a {
 .logo_a {
   text-decoration: none;
   text-shadow: 1px 1px 2px rgb(94, 94, 94);
-  font-family: 'Montserrat', sans-serif;
   color: white;
+  font-weight: 600;
 }
 
 .logo_a:hover {
@@ -157,6 +172,7 @@ a {
   color: white;
   text-decoration: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-weight: 400;
 }
 
 @media screen and (max-width: 1000px) {
@@ -172,7 +188,6 @@ a {
   padding-top: 40px;
   transition: all 0.5s cubic-bezier(0.8, -0.04, 0.21, 0.98);
   box-shadow: inset 0px 60px 10px -50px rgba(0, 0, 0, 0.63);
-  font-weight: bold;
 }
 
 /*Styles for sidebar*/
@@ -262,6 +277,7 @@ a {
 
 /*sidebar <a>*/
 .sidebar_a {
+  font-weight: 400;
   display: block;
   padding: 10px;
   color: white;
@@ -388,9 +404,10 @@ a {
   margin-top: 5px;
 }
 
-.section-h3 {
-  margin-top: 0;
-  display: flex;
+@media screen and (max-width: 628px) {
+  h3 {
+     text-align: center;
+  }
 }
 
 /*Styles for footer*/

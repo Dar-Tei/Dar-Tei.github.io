@@ -1,11 +1,16 @@
 /*Styles for header*/
 html {
-   background-image: url("../../Images/york3.jpg");
+   background-image: url("../Images/york3.jpg");
    background-size: 105%;
    background-repeat: no-repeat;
    background-attachment: fixed;
    scrollbar-color: #6969dd #e0e0e0;
    scrollbar-width: thin;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url(../Fonts/Montserrat-VariableFont_wght.ttf);
 }
 
 body {
@@ -56,18 +61,25 @@ body {
 
 /*Text*/
 p,
-h1,
-h2,
-h3,
 button,
-a {
-   text-shadow: 1px 1px 2px rgb(94, 94, 94);
-   font-family: 'Montserrat', sans-serif;
+a, 
+ul {
+  text-shadow: 1px 1px 2px rgb(94, 94, 94);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
 }
 
-.content,
-.text_wrap,
-.text {
+h1,
+h2,
+h3 {
+  text-shadow: 1px 1px 2px rgb(94, 94, 94);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.content {
    margin: 0;
 }
 
@@ -122,8 +134,8 @@ a {
 .logo_a {
    text-decoration: none;
    text-shadow: 1px 1px 2px rgb(94, 94, 94);
-   font-family: 'Montserrat', sans-serif;
    color: white;
+   font-weight: 600;
 }
 
 .logo_a:hover {
@@ -160,6 +172,7 @@ a {
    color: white;
    text-decoration: none;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   font-weight: 400;
 }
 
 @media screen and (max-width: 1000px) {
@@ -175,7 +188,6 @@ a {
    padding-top: 40px;
    transition: all 0.5s cubic-bezier(0.8, -0.04, 0.21, 0.98);
    box-shadow: inset 0px 60px 10px -50px rgba(0, 0, 0, 0.63);
-   font-weight: bold;
 }
 
 /*Styles for sidebar*/
@@ -265,13 +277,14 @@ a {
 
 /*sidebar <a>*/
 .sidebar_a {
+   font-weight: 400;
    display: block;
    padding: 10px;
    color: white;
    text-decoration: none;
    background-color: rgba(0, 0, 0, 0.466);
    transition: all 0.3s cubic-bezier(1, 0.24, 0.58, 1);
-}
+ }
 
 /* Invert the color of the navigation links on hover */
 .sidebar_a:hover {
@@ -338,31 +351,28 @@ a {
 }
 
 /*important text*/
-.data {
-   font-weight: bold;
+strong {
+   font-weight: 500;
    background: none;
    color: #ffffff;
 }
 
-/*Content images*/
-img {
-   max-width: 300px;
-   border-radius: 3px;
-}
-
 /*First image*/
 .image1 {
-   float: right;
+   float: left;
    width: 7vw;
    height: auto;
-   margin-left: 25px;
+   max-width: 70px;
+   min-width: 32px ;
+   margin-right: 25px;
    margin-bottom: 5px;
 }
 
 /*Images in content*/
 .content-image {
    width: 25vw;
-   height: auto;
+   max-width: 300px;
+   border-radius: 3px;
    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.397);
 }
 
@@ -375,23 +385,29 @@ img {
 
 .img-conteiner-left {
    float: left;
-   font-size: 94%;
    margin-right: 25px;
    margin-bottom: 5px;
-
+   padding: 0;
 }
 
 .img-conteiner-right {
    float: right;
    margin-left: 25px;
    margin-bottom: 5px;
+}
 
-
+/*For beautiful background*/
+.content-image-wrap {
+   background-color: #0000002f;
+   border-radius: 3px;
+   padding: 0 0 5px 0;
+   margin: 0;
 }
 
 @media screen and (max-width: 628px) {
    .content-image {
       width: 100%;
+      max-width: 100%;
    }
 
    .img-conteiner-left {
@@ -419,37 +435,27 @@ img {
    font-size: calc(3px + 16*(100vw / 1280));
    text-align: center;
    margin-top: 5px;
+   width: 25vw;
+   font-weight: 200;
 }
 
 @media screen and (max-width: 628px) {
    .content-image-description {
       font-size: calc(10px + 16*(100vw / 1280));
+      width: 100%;
    }
 }
 
 @media screen and (min-width: 1240px) {
    .content-image-description {
       font-size: 18px;
+      width: 300px;
    }
 }
 
-/*For beautiful background*/
-.content-image-wrap {
-   background-color: #0000002f;
-   border-radius: 3px;
-   padding: 0;
-}
-
-.section-h3 {
-   margin-top: 0;
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-}
-
 @media screen and (max-width: 628px) {
-   .section-h3 {
-      justify-content: center;
+   h3 {
+      text-align: center;
    }
 }
 

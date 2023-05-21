@@ -6,10 +6,10 @@ $(document).ready(function() {
     $sidebar.toggleClass('open');
     if ($sidebar.hasClass('open')) {
       $openButton.addClass('open_button');
-      $(".sidebar_button_icon_open").attr("src", "../Images/Icons/icons8-delete-red.svg")
+      $(".sidebar_button_icon_open").attr("src", "Images/Icons/icons8-delete-red.svg")
     } else {
       $openButton.removeClass('open_button');
-      $(".sidebar_button_icon_open").attr("src", "../Images/Icons/icons8-menu.svg")
+      $(".sidebar_button_icon_open").attr("src", "Images/Icons/icons8-menu.svg")
     }
   });
 // Adaptive background image
