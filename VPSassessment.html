@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Vseprosvitlofor | Assessment</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="CSS/VPSassessment.css">
+   <link rel="VPS icon" href="Images/Ikonka_VPS.assessment.png" type="image/x-icon">
+   <script src="JS/jquery.min.js"></script>
+   <script src="JS/SectionAnimation.js"></script>
+</head>
+
+<body>
+   <div id="preloader">
+      <div class="preloader-content">
+         <img src="Images/Ikonka_VPS.assessment.png" alt="Preloader Image">
+      </div>
+   </div>
+   <div id="my-results" >
+      <div id="results-content">
+         <h2>Результат тесту</h2>
+         <p>Кількість балів: <span id="score"></span></p>
+         <p><span id="grade"></span></p>
+         <a id="reloadBtn" href="VPSassessment.html">OK</a>
+      </div>
+   </div>
+   <script src="JS/preloader.js">
+   </script>
+   <header class="header">
+      <div class="wrap_content_header">
+         <h1 class="logo"><a class="logo_a" href="Index.html">Vseprosvitlofor | Assessment</a>
+         </h1>
+         <button class="open-sidebar">
+            <div class="icon-conteiner">
+               <img class="sidebar_button_icon_open" src="Images/Icons/icons8-menu.svg" />
+            </div>
+         </button>
+         <nav class="Header_nav">
+            <ul class="Header_menu">
+              <li class="Header_li"><a class="Header_a" href="Index.html">Home</a></li>
+              <li class="Header_li"><a class="Header_a" href="VPShistory.html">Історія</a></li>
+              <li class="Header_li"><a class="Header_a" href="VPStypes.html">Види</a></li>
+              <li class="Header_li"><a class="Header_a" href="VPSregulations.html">ПДР</a></li>
+              <li class="Header_li"><a class="Header_a" href="VPSassessment.html">Перевірка знань</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <nav class="sidebar">
+        <div class="sidebar_nav">
+          <ul class="sidebar_menu">
+            <li class="sidebar_li"><a class="sidebar_a" href="Index.html">Home</a></li>
+            <li class="sidebar_li"><a class="sidebar_a" href="VPShistory.html">Історія</a></li>
+            <li class="sidebar_li"><a class="sidebar_a" href="VPStypes.html">Види</a></li>
+            <li class="sidebar_li"><a class="sidebar_a" href="VPSregulations.html">ПДР</a></li>
+            <li class="sidebar_li"><a class="sidebar_a" href="VPSassessment.html">Перевірка знань</a></li>
+          </ul>
+        </div>
+      </nav>
+   <main class="content">
+      <h2>Тести на знання ПДД</h2>
+      <hr class="line1">
+      <div class="section-wrap">
+         <section class="section-text">
+            <div class="quiz-container" id="quiz-buttons">
+               <h2>Завдання 1:</h2>
+               <p>Який колір відображається у верхній частині світлофора?</p>
+               <ul>
+                  <li><input type="radio" name="q1" value="A"> Червоний</li>
+                  <li><input type="radio" name="q1" value="B"> Зелений</li>
+                  <li><input type="radio" name="q1" value="C"> Жовтий</li>
+                  <li><input type="radio" name="q1" value="D"> Блакитний</li>
+               </ul>
+            </div>
+         </section>
+      </div>
+      <div class="section-wrap">
+         <section class="section-text">
+            <div class="quiz-container" id="quiz-buttons">
+               <h2>Завдання 2:</h2>
+               <p>Які кольори зазвичай зустрічаються на світлофорі?</p>
+               <ul>
+                  <li><input type="checkbox" name="q2" value="red"> Червоний</li>
+                  <li><input type="checkbox" name="q2" value="pink"> Рожевий</li>
+                  <li><input type="checkbox" name="q2" value="yellow"> Жовтий</li>
+                  <li><input type="checkbox" name="q2" value="violet"> Фіолетовий</li>
+                  <li><input type="checkbox" name="q2" value="green"> Зелений</li>
+               </ul>
+            </div>
+         </section>
+      </div>
+      <div class="section-wrap">
+         <section class="section-text">
+            <div class="quiz-container">
+               <h2>Завдання 3:</h2>
+               <p>Встановіть відповідність між кольорами світлофора та їхнім значенням:</p>
+               <ul class="matching-quiz" id="q3"> 
+                  <li>
+                     <span class="answer">Червоний</span>
+                     <span class="dropzone-wrap">
+                        <select class="dropzone">
+                           <option value="" name="q3">Оберіть відповідь</option>
+                           <option value="A" name="q3">Можна йти</option>
+                           <option value="B" name="q3">Стій!/зачекай</option>
+                           <option value="C" name="q3">Переміститися у сусідню смугу</option>
+                           <option value="D" name="q3">Прохід/проїзд заборонено!</option>
+                        </select>
+                     </span>
+                  </li>
+                  <li>
+                     <span class="answer">Жовтий</span>
+                     <span class="dropzone-wrap">
+                        <select class="dropzone">
+                           <option value="" name="q3">Оберіть відповідь</option>
+                           <option value="A" name="q3">Можна йти</option>
+                           <option value="B" name="q3">Повернути ліворуч</option>
+                           <option value="C" name="q3">Стій!/Зачекай!</option>
+                           <option value="D" name="q3">Прохід/проїзд заборонено!</option>
+                        </select>
+                     </span>
+                  </li>
+                  <li>
+                     <span class="answer">Зелений</span>
+                     <span class="dropzone-wrap">
+                        <select class="dropzone">
+                           <option value="" name="q3">Оберіть відповідь</option>
+                           <option value="A" name="q3">Повернути праворуч</option>
+                           <option value="B" name="q3">Можна йти/їхати</option>
+                           <option value="C" name="q3">Стій!/Зачекай</option>
+                           <option value="D" name="q3">Прохід/Проїзд заборонено!</option>
+                        </select>
+                     </span>
+                  </li>
+               </ul>
+            </div>
+         </section>
+      </div>
+      <div class="section-wrap">
+         <section class="section-text">
+            <div class="quiz-container" id="quiz-buttons">
+               <h2>Завдання 4:</h2>
+               <p>Коли з'явився перший світлофор?</p>
+               <ul>
+                  <li><input type="radio" name="q4" value="A"> У 1920 році одночасно в Нью-Йорку та Детройті</li>
+                  <li><input type="radio" name="q4" value="B"> 5 серпня 1914 року в Клівленді</li>
+                  <li><input type="radio" name="q4" value="C"> 10 грудня 1868 року в Лондоні</li>
+                  <li><input type="radio" name="q4" value="D"> 9 січня 1915 року в Будапешті</li>
+                  <li><input type="radio" name="q4" value="E"> 21 лютого 1917 року у Стокгольмі</li>
+               </ul>
+            </div>
+         </section>
+      </div>
+      <div class="section-wrap">
+         <section class="section-text">
+            <div class="quiz-container" id="quiz-buttons">
+               <h2>Завдання 5:</h2>
+               <p>У якому місті з'явився перший світлофор з електричними сигналами?</p>
+               <ul>
+                  <li><input type="radio" name="q5" value="A"> у Лондоні </li>
+                  <li><input type="radio" name="q5" value="B"> у Будапешті</li>
+                  <li><input type="radio" name="q5" value="C"> у Нью-Йорку</li>
+                  <li><input type="radio" name="q5" value="D"> у Клівленді </li>
+                  <li><input type="radio" name="q5" value="E"> у Детройті</li>
+               </ul>
+            </div>
+         </section>
+      </div>
+      <div class="section-wrap">
+         <section class="section-text">
+            <div class="quiz-container" id="quiz-buttons">
+               <h2>Завдання 6:</h2>
+               <p>Хто має більший пріоритет у регулюванні руху на перехресті?</p>
+               <ul>
+                  <li><input type="radio" name="q6" value="A"> Світлофор </li>
+                  <li><input type="radio" name="q6" value="B"> Автомобіль</li>
+                  <li><input type="radio" name="q6" value="C"> Регулювальник</li>
+                  <li><input type="radio" name="q6" value="D"> Пішохід</li>
+                  <li><input type="radio" name="q6" value="E"> Дорожні знаки</li>
+               </ul>
+            </div>
+         </section>
+      </div>
+      <div class="section-wrap">
+         <section class="section-text">
+            <div class="quiz-container" id="quiz-buttons">
+               <h2>Завдання 7:</h2>
+               <p>Які світлофори використовуються для регулювання автомобільного руху?</p>
+               <ul>
+                  <li><input type="checkbox" name="q7" value="A"> Світлофор із мигаючим червоним сигналом</li>
+                  <li><input type="checkbox" name="q7" value="B"> Автомобільні світлофори</li>
+                  <li><input type="checkbox" name="q7" value="C"> Світлофори для пішоходів</li>
+                  <li><input type="checkbox" name="q7" value="D"> Світлофори для велосипедистів</li>
+                  <li><input type="checkbox" name="q7" value="E"> Залізничний світлофор</li>
+                  <li><input type="checkbox" name="q7" value="F"> Світлофори на залізничних переїздах</li>
+                  <li><input type="checkbox" name="q7" value="G"> Реверсійний світлофор</li>
+               </ul>
+            </div>
+         </section>
+      </div>
+      <div class="section-wrap">
+         <section class="section-text">
+            <div class="quiz-container">
+               <h2>Завдання 8:</h2>
+               <p>Встановіть відповідність між типом світлофору з додатковою секцією на перехресті та правилами руху:</p>
+               <ul class="matching-quiz" id="q8">
+                  <li>
+                     <span class="answer">Cвітлофор з контурною правою стрілкою</span>
+                     <span class="dropzone-wrap">
+                        <select class="dropzone">
+                           <option value="">Оберіть відповідь</option>
+                           <option value="A">Дозволяється відразу повернути праворуч, навіть коли основний сигнал світлофора червоний</option>
+                           <option value="B">Дозволяється повернути праворуч, коли основний сигнал світлофора зелений</option>
+                           <option value="C">Прохід/проїзд заборонено!</option>
+                        </select>
+                     </span>
+                  </li>
+                  <li>
+                     <span class="answer">Cвітлофор з правою стрілкою на табличці на рівні червоного сигналу</span>
+                     <span class="dropzone-wrap">
+                        <select class="dropzone">
+                           <option value="">Оберіть відповідь</option>
+                           <option value="A">Дозволяється відразу повернути праворуч, навіть коли основний сигнал світлофора червоний</option>
+                           <option value="B">Дозволяється повернути праворуч, коли основний сигнал світлофора зелений</option>
+                           <option value="С">Прохід/проїзд заборонено!</option>
+                        </select>
+                     </span>
+                  </li>
+               </ul>
+            </div>
+         </section>
+      </div>
+      <div class="section-wrap">
+         <section class="section-text">
+            <div class="quiz-container" id="quiz-buttons">
+               <h2>Завдання 9:</h2>
+               <p>Які передбачені Законом України покарання у разі проїзду на червоний сигнал світлофора?</p>
+               <ul>
+                  <li><input type="checkbox" name="q9" value="A"> Стаття 122, накладення штрафу в розмірі 20 неоподатковуваних мінімумів доходів громадян. </li>
+                  <li><input type="checkbox" name="q9" value="B"> Стаття 122, частина 4 — накладення штрафу від 15 до 18 неоподатковуваних мінімумів доходів 
+                     громадян або громадські роботи на строк від 30 до 40 годин, або адміністративний арешт на строк від 10 до 15 діб.</li>
+                  <li><input type="checkbox" name="q9" value="C"> Стаття 122, частина 2 — штраф 510 грн</li>
+                  <li><input type="checkbox" name="q9" value="D"> Стаття 123, частина 1 — штраф 340 грн</li>
+                  <li><input type="checkbox" name="q9" value="E"> Стаття 122, частина 5 — у разі виникнення 
+                  аварійної ситуації штраф 1445 грн або позбавлення права керування транспортними засобами на 6—12 місяців.</li>
+               </ul>
+            </div>
+         </section>
+      </div>
+      <div class="section-wrap">
+         <section class="section-text">
+            <div class="quiz-container">
+               <h2>Завдання 10:</h2>
+               <p>Встановіть відповідність між положенням регулювальника та значенням цього положення:</p>
+               <ul class="matching-quiz" id="q10">
+                  <li>
+                     <span class="answer">Положення 1: Регулювальник дорожнього руху стоїть обличчям до вас. Руки його опущені донизу
+                     або розведені по сторонах або може бути зігнута перед грудьми права рука жезлом вліво</span>
+                     <span class="dropzone-wrap">
+                        <select class="dropzone">
+                           <option value="">Оберіть відповідь</option>
+                           <option value="A">Рух заборонено в усі сторони</option>
+                           <option value="B">Рух заборонено прямо, а праворуч – рух дозволено</option>
+                           <option value="C">Можна їхати прямо або праворуч, спочатку пропустивши пішоходів.</option>
+                           <option value="D">«Увага!» або жовтий сигнал світлофора</option>
+                           <option value="E">Дозволяється їхати у будь-якому напрямку</option>
+                        </select>
+                     </span>
+                  </li>
+                  <li>
+                     <span class="answer">Положення 2: Регулювальник знову стоїть обличчям до вас, 
+                        але його права рука, що тримає жезл, витягнута вперед, тобто до вас</span>
+                     <span class="dropzone-wrap">
+                        <select class="dropzone">
+                           <option value="">Оберіть відповідь</option>
+                           <option value="A">Рух заборонено в усі сторони</option>
+                           <option value="B">Рух заборонено прямо, а праворуч – рух дозволено</option>
+                           <option value="C">Можна їхати прямо або праворуч, спочатку пропустивши пішоходів.</option>
+                           <option value="D">«Увага!» або жовтий сигнал світлофора</option>
+                           <option value="E">Дозволяється їхати у будь-якому напрямку</option>
+                        </select>
+                     </span>
+                  </li>
+                  <li>
+                     <span class="answer">Положення 3: Рука регулювальника з жезлом піднята вгору. 
+                        При цьому він стоїть до вас будь-яким боком</span>
+                     <span class="dropzone-wrap">
+                        <select class="dropzone">
+                           <option value="">Оберіть відповідь</option>
+                           <option value="A">Рух заборонено в усі сторони</option>
+                           <option value="B">Рух заборонено прямо, а праворуч – рух дозволено</option>
+                           <option value="C">Можна їхати прямо або праворуч, спочатку пропустивши пішоходів.</option>
+                           <option value="D">«Увага!» або жовтий сигнал світлофора</option>
+                           <option value="E">Дозволяється їхати у будь-якому напрямку</option>
+                        </select>
+                     </span>
+                  </li>
+                  <li>
+                     <span class="answer">Положення 4: егулювальник руху стоїть правим боком до вашої 
+                        машини з витягнутою вперед рукою з жезлом:</span>
+                     <span class="dropzone-wrap">
+                        <select class="dropzone">
+                           <option value="">Оберіть відповідь</option>
+                           <option value="A">Рух заборонено в усі сторони</option>
+                           <option value="B">Рух заборонено прямо, а праворуч – рух дозволено</option>
+                           <option value="C">Можна їхати прямо або праворуч, спочатку пропустивши пішоходів.</option>
+                           <option value="D">«Увага!» або жовтий сигнал світлофора</option>
+                           <option value="E">Дозволяється їхати у будь-якому напрямку</option>
+                        </select>
+                     </span>
+                  </li>
+                  <li>
+                     <span class="answer">Положення 5 і 6: Регулювальник дорожнього руху стоїть спиною до вас. Руки його можуть перебувати в різних позиціях</span>
+                     <span class="dropzone-wrap">
+                        <select class="dropzone">
+                           <option value="">Оберіть відповідь</option>
+                           <option value="A">Рух заборонено в усі сторони</option>
+                           <option value="B">Рух заборонено прямо, а праворуч – рух дозволено</option>
+                           <option value="C">Можна їхати прямо або праворуч, спочатку пропустивши пішоходів.</option>
+                           <option value="D">«Увага!» або жовтий сигнал світлофора</option>
+                           <option value="E">Дозволяється їхати у будь-якому напрямку</option>
+                        </select>
+                     </span>
+                  </li>
+                  <li>
+                     <span class="answer">Положення 7: Регулювальник руху стоїть лівим боком до вашої машини, 
+                     а його руки опущені донизу, витягнуті по сторонах або зігнуті і притиснуті до грудей</span>
+                     <span class="dropzone-wrap">
+                        <select class="dropzone">
+                           <option value="">Оберіть відповідь</option>
+                           <option value="A">Рух заборонено в усі сторони</option>
+                           <option value="B">Рух заборонено прямо, а праворуч – рух дозволено</option>
+                           <option value="C">Можна їхати прямо або праворуч, спочатку пропустивши пішоходів.</option>
+                           <option value="D">«Увага!» або жовтий сигнал світлофора</option>
+                           <option value="E">Дозволяється їхати у будь-якому напрямку</option>
+                        </select>
+                     </span>
+                  </li>
+                  <li>
+                     <span class="answer">Положення 8: Регулювальник стоїть до вас лівим боком з витягнутою вперед рукою з жезлом</span>
+                     <span class="dropzone-wrap">
+                        <select class="dropzone">
+                           <option value="">Оберіть відповідь</option>
+                           <option value="A">Рух заборонено в усі сторони</option>
+                           <option value="B">Рух заборонено прямо, а праворуч – рух дозволено</option>
+                           <option value="C">Можна їхати прямо або праворуч, спочатку пропустивши пішоходів.</option>
+                           <option value="D">«Увага!» або жовтий сигнал світлофора</option>
+                           <option value="E">Дозволяється їхати у будь-якому напрямку</option>
+                        </select>
+                     </span>
+                  </li>
+               </ul>
+            </div>
+         </section>
+      </div>
+      <div class="button-conteiner">
+         <button id="submitBtn">
+            Завершити тестування
+         </button>
+      </div>    
+   </main>
+   <button id="scrollToTopBtn">
+      <div class="icon-conteiner">
+         <img class="up_button_icon_open" src="Images/Icons/Rocket_icon.svg" />
+      </div>
+   </button>
+   <footer class="footer_wrap">
+      <div class="footer_content">
+         <p>Vseprosvitlofor — 2023</p>
+      </div>
+   </footer>
+   <script src="JS/VPSassessment.js"></script>
+   <script src="JS/sidebar.js"></script>
+   <script src="JS/FooterSlide.js"></script>
+   <script src="JS/ScrollToTop.js"></script>
+   <script src="JS/overlay.js"></script>
+</body>
+
+</html>

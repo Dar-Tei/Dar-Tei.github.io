@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="black"/>
+    </filter>
+  </defs>
+  <polygon points="16.707 4.707 9.414 12 16.707 19.293 15.293 20.707 6.586 12 15.293 3.293 16.707 4.707" fill="white" filter="url(#shadow)"/>
+</svg>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vseprosvitlofor | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/SectionAnimation.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/Index.css">
+    <link rel="VPS icon" href="Images/Ikonka_VPS.png"  type="image/x-icon">
+  </head>
+  <body> 
+    <div id="preloader">
+      <div class="preloader-content">
+        <img src="Images/Ikonka_VPS.png" alt="Preloader Image">
+      </div>
+    </div>
+    <script src="JS/preloader.js">
+    </script>
+    <header class="header">
+      <div class="wrap_content_header">
+        <h1 class="logo"><a class="logo_a" href="Index.html">Vseprosvitlofor | Home</a></h1>
+        <button class="open-sidebar">
+          <div class="icon-conteiner">
+            <img class="sidebar_button_icon_open" src="Images/Icons/icons8-menu.svg" />
+          </div>
+        </button>
+        <nav class="Header_nav">
+          <ul class="Header_menu">
+            <li class="Header_li"><a class="Header_a" href="Index.html">Home</a></li>
+            <li class="Header_li"><a class="Header_a" href="VPShistory.html">Історія</a></li>
+            <li class="Header_li"><a class="Header_a" href="VPStypes.html">Види</a></li>
+            <li class="Header_li"><a class="Header_a" href="VPSregulations.html">ПДР</a></li>
+            <li class="Header_li"><a class="Header_a" href="VPSassessment.html">Перевірка знань</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <nav class="sidebar">
+      <div class="sidebar_nav">
+        <ul class="sidebar_menu">
+          <li class="sidebar_li"><a class="sidebar_a" href="Index.html">Home</a></li>
+          <li class="sidebar_li"><a class="sidebar_a" href="VPShistory.html">Історія</a></li>
+          <li class="sidebar_li"><a class="sidebar_a" href="VPStypes.html">Види</a></li>
+          <li class="sidebar_li"><a class="sidebar_a" href="VPSregulations.html">ПДР</a></li>
+          <li class="sidebar_li"><a class="sidebar_a" href="VPSassessment.html">Перевірка знань</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="content">
+      <h2>Про що цей сайт?</h2>
+      <hr class="line1">
+      <div class="section-wrap">   
+          <section class="section-text">
+            <h3 class="section-h3">Короткий опис сайту</h3>
+            <div class="img-conteiner-left">
+              <img class="content-image" src="Images/svetofor3.jpg" title="Світлофор">
+            </div>
+            <p>Це сайт про все те, шо пов'язане зі світлофорами. На сайті є 4 сторінки на різні теми що повязані зі світлофорами такі як:</p>
+            <ul>
+              <li><a class="index_link" href="VPShistory.html"><img class="custom-marker" src="Images/Ikonka_VPS.history.png" title="Іконка 'Історія світлофорів'"><strong>Історія</strong> — світлофори мають дуже довгу і цікаву історію, те як вони виникли і увійшли в наше повсякденне життя;</a></li>
+              <li><a class="index_link" href="VPStypes.html"><img class="custom-marker" src="Images/Ikonka_VPS.types.png" title="Іконка 'Види світлофорів'"><strong>Види</strong> — світлофори поділяються на різні типи і види, тому бажано знати, як працює кожен з них;</a></li>
+              <li><a class="index_link" href="VPSregulations.html"><img class="custom-marker" src="Images/Ikonka_VPS.regulations.png" title="Іконка 'ПДР'"><strong>ПДР</strong> — ви повинні знати правила дорожнього руху, щоб убезпечити себе та інших від небезпеки;</a></li>
+              <li><a class="index_link" href="VPSassessment.html"><img class="custom-marker" src="Images/Ikonka_VPS.assessment.png" title="Іконка 'Перевірка знань'"><strong>Перевірка знань</strong> — після того як ознайомитеся зі сторінками вище ви можете пройти невелике тестування.</a></li>
+            </ul>
+            <p>Ви можете ознайомитись з ними, я сподіваюсь що інформація яка там є вас зацікавить.</p> 
+          </section>
+      </div>     
+    </main>
+    <button id="scrollToTopBtn">
+      <div class="icon-conteiner">
+         <img class="up_button_icon_open" src="Images/Icons/Rocket_icon.svg" />
+      </div>
+    </button>
+    <div class="overlay">
+      <div class="button-container-close-button">
+        <button class="close-button"><img src="Images/Icons/icons8-delete.svg"></button>
+      </div>
+      <img class="full-image" src="" alt="Full Image">
+      <div class="button-container">
+        <button class="prev-button"><img src="Images/Icons/arrow-left.svg"></button> 
+          <p class="description"></p>
+        <button class="next-button"><img src="Images/Icons/arrow-right.svg"></button>      
+      </div>
+    </div>
+    <footer class="footer_wrap">
+      <div class="footer_content">
+        <p>Vseprosvitlofor — 2023</p>
+      </div>
+    </footer>
+    <script src="JS/sidebar.js"></script>
+    <script src="JS/overlay.js"></script>
+    <script src="JS/FooterSlide.js"></script>
+    <script src="JS/ScrollToTop.js"></script>
+  </body>
+</html>
